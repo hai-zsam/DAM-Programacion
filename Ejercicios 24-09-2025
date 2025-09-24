@@ -34,3 +34,32 @@ Algoritmo Ejercicio6Alt
 	Escribir "El producto de " a " + " b " da " producto;
 	Escribir "La división de " a " + " b " da " division;
 FinAlgoritmo
+
+# Ejercicio 9, programa incorrecto pero funcional
+Algoritmo Ejercicio9
+	Escribir "Introduce una cantidad de segundos"
+	Leer sec
+	min<-sec/60
+	hour<-min/60
+	Escribir sec " segundos son " min " minutos y " hour " horas." 
+FinAlgoritmo
+
+# Ejercicio 9 corregido
+Algoritmo Ejercicio9
+	Escribir "Introduce una cantidad de segundos"
+	Leer totalSegundos
+	
+	restoHoras = (totalSegundos%3600)
+	horas = (totalSegundos - restoHoras)/3600
+	
+	segundos = restoHoras % 60
+	minutos = (restoHoras - segundos)/60
+	
+	Escribir "horas: ", horas
+	Escribir "minutos ", minutos
+	Escribir "segundos ", segundos
+	
+	Escribir "La cantidad de horas, minutos y segundos es " horasRestante "h " minutos " min y " secRestante " segundos."
+FinAlgoritmo
+
+	
