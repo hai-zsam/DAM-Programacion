@@ -1,0 +1,36 @@
+# Ejercicio 6 de Pseudocódigo, Tema 1 en Pseint
+
+Algoritmo Ejercicio6
+	Escribir "Introduce el primer dígito a calcular";
+	Leer a;
+	Escribir "Introduce el segundo dígito a calcular";
+	Leer b;
+
+	c<-a+b
+	Escribir "El resultado de la suma es " c;
+	c<-a-b;
+	Escribir "El resultado de la resta es " c;
+	c<-a*b
+	Escribir "El producto de " a " y " b " es " c
+	c<-a/b
+	Escribir "La división entre " a " y " b " da " c
+FinAlgoritmo
+
+# Versión alternativa del Ejercicio 6 en Pseint
+
+Algoritmo Ejercicio6Alt
+	Escribir "Introduce el primer dígito a calcular";
+	Leer a;
+	Escribir "Introduce el segundo dígito a calcular";
+	Leer b;
+
+	suma<-a+b
+	resta<-a-b
+	producto<-a*b
+	division<-a/b
+	
+	Escribir "La suma de " a " + " b " da " suma;
+	Escribir "La resta de " a " + " b " da " resta;
+	Escribir "El producto de " a " + " b " da " producto;
+	Escribir "La división de " a " + " b " da " division;
+FinAlgoritmo
