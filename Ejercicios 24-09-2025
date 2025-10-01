@@ -35,7 +35,8 @@ Algoritmo Ejercicio6Alt
 	Escribir "La división de " a " + " b " da " division;
 FinAlgoritmo
 
-# Ejercicio 9, programa incorrecto pero funcional
+# Ejercicio 9, programa incorrecto pero funcional, Parte 1
+
 Algoritmo Ejercicio9
 	Escribir "Introduce una cantidad de segundos"
 	Leer sec
@@ -44,7 +45,8 @@ Algoritmo Ejercicio9
 	Escribir sec " segundos son " min " minutos y " hour " horas." 
 FinAlgoritmo
 
-# Ejercicio 9 corregido
+# Ejercicio 9 corregido, Parte 1
+
 Algoritmo Ejercicio9
 	Escribir "Introduce una cantidad de segundos"
 	Leer totalSegundos
@@ -62,4 +64,40 @@ Algoritmo Ejercicio9
 	Escribir "La cantidad de horas, minutos y segundos es " horasRestante "h " minutos " min y " secRestante " segundos."
 FinAlgoritmo
 
-	
+# Ejercicio 7, Parte 1
+
+Algoritmo Ejercicio7Parte1
+	Escribir "Introduce tu nombre"
+	Leer nombre
+	Escribir "Introduce horas trabajadas"
+	Leer horasTrabajadas
+	Escribir "Introduce tu salario por hora"
+	Leer salarioHora
+	salarioTotal<-horasTrabajadas*salarioHora
+	Escribir "El salario de " nombre " es de " salarioTotal " euros."
+FinAlgoritmo
+
+# Ejercicio 8, Parte 1
+
+Algoritmo Ejercicio8Parte1
+	Escribir "Introduce la cantidad de alumnos niños."
+	Leer niños
+	Escribir "Introduce la cantidad de alumnas niñas."
+	Leer niñas
+	totalAlumnos<- niños+niñas
+	porcentajeNiños<- (niños*100)/totalAlumnos
+	porcentajeNiñas<- (niñas*100)/totalAlumnos
+	Escribir "De " totalAlumnos " alumnos en el curso, hay un " porcentajeNiños "% de niños y un " porcentajeNiñas "% de niñas."
+FinAlgoritmo
+
+# Ejercicio 10, Parte 1
+
+Algoritmo Ejercicio10Parte1
+	Escribir "Introduce una cantidad de segundos."
+	Leer segundos
+	residuo<- segundos%60
+	segundosRestantes<-60-residuo
+	Escribir "Los segundos restantes hasta otro minuto son " segundosRestantes
+FinAlgoritmo
+
+# Ejercicio 1, Parte 2
