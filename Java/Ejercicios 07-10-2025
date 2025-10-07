@@ -1,1 +1,24 @@
+void main() {
+    /* Ejercicio 1
+    System.out.println("Sara"); */
 
+    /* Ejercicio 2
+    System.out.println("Sara");
+    System.out.println("Direccion");
+    System.out.println("Numero de telefono"); */
+
+    /* Ejercicio 3
+    String nombre = "Sara Zhipei";
+    System.out.println(nombre); */
+
+    /* Ejercicio 4
+    String nombre = "Sara";
+    String direccion = "Direccion";
+    String telefono = "Telefono";
+    System.out.println(nombre + ", " + direccion + ", " + telefono); */
+    /* Ejercicio 5
+    int x = 144;
+    int e = 999;
+
+    System.out.println(x + ", " + e + ". La suma de los dos da: " + (x+e) + ". La resta es: " + (x-e) + ". La division es: " + (x/e) + ". Y la multiplicacion es:  " + (x*e) + "."); */
+}
