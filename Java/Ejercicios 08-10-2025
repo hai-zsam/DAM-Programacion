@@ -1,0 +1,21 @@
+void main() {
+    /* Ejercicio 6
+    // Objeto Scanner para leer desde el teclado
+    Scanner sc = new Scanner(System.in);
+
+    // Pedir datos al usuario
+    System.out.println("Introduce una cantidad de euros a pasar a dolares");
+    double euros = sc.nextInt(); // Int lee un numero entero
+    double dolares = euros * 1.16;
+
+    System.out.println("La cantidad de dolares es: "+dolares); */
+
+    /* Ejercicio 7
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Introduce la cantidad de dolares a pasar a euros.");
+    double dolares = sc.nextDouble();
+    double euros = dolares/1.16;
+
+    System.out.println("La cantidad de euros es: "+euros);  */
+}
