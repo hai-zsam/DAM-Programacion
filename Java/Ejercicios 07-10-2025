@@ -16,6 +16,7 @@ void main() {
     String direccion = "Direccion";
     String telefono = "Telefono";
     System.out.println(nombre + ", " + direccion + ", " + telefono); */
+
     /* Ejercicio 5
     int x = 144;
     int e = 999;
