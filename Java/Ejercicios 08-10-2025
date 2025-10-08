@@ -18,4 +18,16 @@ void main() {
     double euros = dolares/1.16;
 
     System.out.println("La cantidad de euros es: "+euros);  */
+
+    /* Ejercicio 8
+    double baseImponible, totalConIva;
+    final double IVA = 0.21;
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Ingrese el valor base: ");
+
+    baseImponible = sc.nextDouble();
+    totalConIva = baseImponible*IVA+baseImponible;
+
+    System.out.println(totalConIva); */
 }
