@@ -30,4 +30,39 @@ void main() {
     totalConIva = baseImponible*IVA+baseImponible;
 
     System.out.println(totalConIva); */
+
+/* Ejercicio 9
+
+    int a, resultado;
+    System.out.println("Ingresa el valor de a: ");
+    Scanner sc = new Scanner(System.in);
+    a = sc.nextInt();
+
+    resultado = a >= 0? a : -a;
+    System.out.println(resultado); */
+
+    /* Ejercicio 10
+
+    int a, b, menor;
+    System.out.println("Ingresa el valor de a: ");
+    Scanner sc = new Scanner(System.in);
+    a = sc.nextInt();
+
+    System.out.println("Ingresa el valor de b: ");
+    b = sc.nextInt();
+
+    menor = a < b ? a : b;
+    System.out.println("El menor valor es: " + menor); */
+
+    /* Ejercicio 11 */
+    boolean int edad, nivelEstudios, ingresos;
+
+    if {
+        edad >= 28 AND nivelEstudios >= 3 OR edad <= 30 AND ingresos >= 28000;
+        System.out.println("Verdadero.");
+    }
+
+    else {
+        System.out.println("Falso");
+    }
 }
