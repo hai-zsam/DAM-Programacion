@@ -1,4 +1,5 @@
-void main() {
+import java.util.Scanner;
+public class Main {
     /* Ejercicio 6
         Escribe un programa en el que se declaren las variables enteras x e y. Asígnales los valores de 144 y 999 respectivamente.
         A continuación, muestra por pantalla el valor de cada variable, la suma, la resta, la división y la multiplicación.
@@ -48,26 +49,69 @@ void main() {
 
     /* Ejercicio 10
 
-    int a, b, menor;
-    System.out.println("Ingresa el valor de a: ");
-    Scanner sc = new Scanner(System.in);
-    a = sc.nextInt();
+        int n1, n2, max;
+        System.out.println("Introduce el primer número a evaluar.");
+        Scanner sc = new Scanner(System.in);
+        n1 = sc.nextInt();
+        System.out.println("Introduce el segundo número a evaluar.");
+        n2 = sc.nextInt();
 
-    System.out.println("Ingresa el valor de b: ");
-    b = sc.nextInt();
+        int max = n1>n2?n1:n2;
+        System.out.println("El número mayor es " + max); */
 
-    menor = a < b ? a : b;
-    System.out.println("El menor valor es: " + menor); */
+    /* Ejercicio 11
+        Realiza un programa que utilice tres variables enteras "edad", "nivelEstudios" e "ingresos".
+        El programa deberá guardar en una variable booleana resultado:
 
-    /* Ejercicio 11 */
-    boolean int edad, nivelEstudios, ingresos;
 
-    if {
-        edad >= 28 AND nivelEstudios >= 3 OR edad <= 30 AND ingresos >= 28000;
-        System.out.println("Verdadero.");
-    }
+        int edad, nivelEstudios, ingresos;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese su edad.");
+        edad = sc.nextInt();
 
-    else {
-        System.out.println("Falso");
+        System.out.println("Ingrese su nivel de estudio.");
+        nivelEstudios = sc.nextInt();
+
+        System.out.println("Ingrese su cantidad de ingresos.");
+        ingresos = sc.nextInt();
+
+        System.out.println((edad<=28 && nivelEstudios>3)||(edad<=30 && ingresos>28000)?"Verdadero.":"Falso."); */
+
+    /* Ejercicio 14
+        float precioInicial = 0.00f;
+        float iva = 0.00f;
+        float ivaGeneral = 0.21f;
+        float ivaReducido = 0.10f;
+        boolean codigoPromocional = true;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el precio a calcular: ");
+        precioInicial = sc.nextFloat();
+
+        Scanner sBIBA = new Scanner(System.in);
+        System.out.println("¿El IVA es General o Reducido?");
+        String BIBA = sBIBA.nextLine();
+
+        if (BIBA.equals("Reducido")) {
+            iva = ivaReducido;
+        } else {
+            iva = ivaGeneral;
+        }
+
+        Scanner sBIBA2 = new Scanner(System.in);
+        System.out.println("¿Tiene algún código promocional?");
+        String BIBA2 = sBIBA2.nextLine();
+        if (BIBA2.equals("Si")) {
+            codigoPromocional = true;
+        } else  {
+            codigoPromocional = false;
+        }
+
+        System.out.println("La base imponible es " + precioInicial + "€.");
+        precioInicial = (precioInicial * iva) + precioInicial;
+        System.out.println("El precio es: " + precioInicial);
+
+        precioInicial = precioInicial/(codigoPromocional?2:1);
+        System.out.println("El precio luego de aplicar descuentos es: " + precioInicial); */
     }
 }
