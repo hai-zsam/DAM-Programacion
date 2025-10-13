@@ -1,23 +1,28 @@
 void main() {
     /* Ejercicio 6
-    // Objeto Scanner para leer desde el teclado
-    Scanner sc = new Scanner(System.in);
+        Escribe un programa en el que se declaren las variables enteras x e y. Asígnales los valores de 144 y 999 respectivamente.
+        A continuación, muestra por pantalla el valor de cada variable, la suma, la resta, la división y la multiplicación.
 
-    // Pedir datos al usuario
-    System.out.println("Introduce una cantidad de euros a pasar a dolares");
-    double euros = sc.nextInt(); // Int lee un numero entero
-    double dolares = euros * 1.16;
+        int x = 144;
+        int e = 999;
+        System.out.println(x + " " + e + " " + (x+e) + " " + (x-e) + " " +  (x/e) + " " + (x*e));
 
-    System.out.println("La cantidad de dolares es: "+dolares); */
+         */
 
     /* Ejercicio 7
-    Scanner sc = new Scanner(System.in);
+        Realiza un conversor de euros a dólares. LLa cantidad en euros que se quiere convertir deberá estar almacenada en una variable.
 
-    System.out.println("Introduce la cantidad de dolares a pasar a euros.");
-    double dolares = sc.nextDouble();
-    double euros = dolares/1.16;
+        float n = 0.00f;
+        float dolar = 1.16f;
+        float euros = 0.00f;
+        System.out.println("Introduce una cantidad de euros para convertir a dólares.");
 
-    System.out.println("La cantidad de euros es: "+euros);  */
+        Scanner input = new Scanner (System.in);
+        n = input.nextFloat();
+
+        euros = n*dolar;
+        System.out.println(euros);
+        */
 
     /* Ejercicio 8
     double baseImponible, totalConIva;
