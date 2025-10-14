@@ -1,0 +1,30 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args){
+    
+    /* Ejercicio 1, Parte 2
+        String dia;
+        String asignatura;
+        Scanner sDia = new Scanner(System.in);
+        System.out.println("Introduce el día de la semana:");
+        dia = sDia.nextLine().toLowerCase();
+
+        if (dia.equals("lunes")) {
+            asignatura = "Sistemas Informáticos.";
+        } else if (dia.equals("martes")) {
+            asignatura = "Programación.";
+            } else if (dia.equals("miércoles")) {
+                asignatura = "Programación.";
+                } else if (dia.equals("jueves")) {
+                    asignatura = "Inglés.";
+                    } else if (dia.equals("viernes")) {
+                        asignatura = "Entorno de desarrollo.";
+                        } else {
+            asignatura = "Día no válido.";
+        }
+        System.out.println("La asignatura de la primera hora es " + asignatura) ; */
+
+        
+    }
+}
