@@ -106,7 +106,50 @@ public class main {
             }
         } */
 
+/* Ejercicio 6
 
+        int contador = -1;
+        int resultado = 0;
+        while (contador < 100) {
+
+            contador += 1;
+            resultado = (contador*5);
+
+            System.out.println(resultado);
+            }
+
+/* Ejercicio 7
+
+        int contador = -1;
+        int resultado;
+        do{
+            contador += 1;
+            resultado = (contador*5);
+
+            System.out.println(resultado);
+        } while (contador < 100); */
+
+/* Ejercicio 8
+        for (int contador = 320; contador >= 160; contador -= 20) {
+            System.out.println(contador);
+        } */
+
+/* Ejercicio 9
+        int contador = 320;
+        while(contador >= 160){
+            System.out.println(contador);
+            contador -= 20;
+        }
+
+
+/* Ejercicio 10
+
+        int contador = 320;
+
+        do{
+            System.out.println(contador);
+            contador -= 20;
+        } while (contador >= 160); */
 
     }
 }
