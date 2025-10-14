@@ -52,7 +52,61 @@ public class main {
                 System.out.println("Día no válido.");
         } */
 
-/* Ejercicio 2
-        
+/* Ejercicio 2, PDF 2
+
+        int hora;
+        System.out.println("Introduce la hora actual.");
+        Scanner sHora = new Scanner(System.in);
+        hora = sHora.nextInt();
+
+        if (hora >= 6 || hora <= 12){
+            System.out.println("Buenos días.");
+        } else if (hora >= 13 || hora <=20){
+            System.out.println("Buenas tardes.");
+        } else {
+            System.out.println("Buenas noches."); */
+
+/* Ejercicio 3, PDF 2
+
+        double primerExamen;
+        double segundoExamen;
+        double media;
+        double valorRecuperacion;
+
+        Scanner sExamen1 = new Scanner(System.in);
+        System.out.println("¿Qué nota has sacado en el primer exámen?");
+        primerExamen = sExamen1.nextDouble();
+
+        Scanner sExamen2 = new Scanner(System.in);
+        System.out.println("¿Qué nota has sacado en el segundo exámen?");
+        segundoExamen = sExamen2.nextDouble();
+
+        media = ((primerExamen+segundoExamen)/2);
+
+        if ((primerExamen >= 5) && (segundoExamen >=5)){
+            System.out.println("Tu nota en programación es: " + media);
+        } else {
+            Scanner sRecuperacion = new Scanner(System.in);
+            System.out.println("¿Qué nota has sacado en la recuperación?");
+            valorRecuperacion = sRecuperacion.nextDouble();
+
+            if (valorRecuperacion<5){
+                System.out.println("No apto.");
+            } else {
+                media = (primerExamen+segundoExamen+5)/3;
+                System.out.println("Tu nota en programación es: " + media);
+            }
+        }
+
+/* Ejercicio 5
+
+        for (int contador = 100; contador > 0 ; contador--) {
+            if (contador % 5 == 0){
+                System.out.println(contador);
+            }
+        } */
+
+
+
     }
 }
