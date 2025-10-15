@@ -79,3 +79,12 @@
         }
         
         // Adaptar a bucle tipo do-while
+        do {
+            claveIntroducida = sClave.nextInt();
+            if (claveIntroducida == psw){
+                System.out.println("La caja fuerte se ha abierto satisfactoriamente.");
+            } else {
+                    intentosRestantes -= 1;
+                    System.out.println("La clave es incorrecta. Inténtalo de nuevo: ");
+            }
+        } while (claveIntroducida != psw && intentosRestantes > 0);
