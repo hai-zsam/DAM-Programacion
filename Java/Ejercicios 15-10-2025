@@ -1,1 +1,60 @@
+/* Comer y beber
+        String respuesta = "";
+        String norma = "";
+        System.out.println("¿Que ha dicho David Juan?");
+        System.out.println("No comer O beber, no comer Y beber o no comer NI beber. (O/Y/NI)");
+        Scanner sNorma = new Scanner(System.in);
+        norma = sNorma.nextLine().toLowerCase();
 
+        switch (norma) {
+            case "o":
+                Scanner sOr = new Scanner(System.in);
+                System.out.println("¿Estás comiendo?¿Bebiendo?¿Ambas?");
+                respuesta = sOr.nextLine().toLowerCase();
+
+                // No se puede comer O beber
+
+                if (respuesta.equals("comiendo")) {
+                    System.out.println("No se puede comer, aunque no estés bebiendo.");
+                } else if (respuesta.equals("bebiendo")) {
+                    System.out.println("No se puede beber, aunque no estés comiendo.");
+                } else {
+                    System.out.println("ambas");
+                    System.out.println("Eres gilipollas.");
+                };
+                break;
+
+            case "y":
+                Scanner sY = new Scanner(System.in);
+                System.out.println("¿Estás comiendo?¿Bebiendo?¿Ambas?");
+                respuesta = sY.nextLine().toLowerCase();
+
+                if (respuesta.equals("comiendo")) {
+                    System.out.println("No se puede comer Y beber. Está OK.");
+                } else if (respuesta.equals("bebiendo")) {
+                    System.out.println("No se puede beber Y beber. Está OK.");
+                } else if (respuesta.equals("ambas")) {
+                    System.out.println("No se puede comer Y beber.");
+                } else {
+                    System.out.println("David Juan ha dicho Y, no NI u O. Está OK.");
+                };
+                break;
+
+            case "ni":
+                Scanner sNi = new Scanner(System.in);
+                System.out.println("¿Estás comiendo?¿Bebiendo?¿Ambas?");
+                respuesta = sNi.nextLine().toLowerCase();
+
+                if (respuesta.equals("comiendo")) {
+                    System.out.println("No se puede comer.");
+                } else if (respuesta.equals("bebiendo")) {
+                    System.out.println("No se puede beber.");
+                } else if (respuesta.equals("ambas")) {
+                System.out.println("No se puede comer NI beber.");
+                } else {
+                    System.out.println("OK");
+                };
+                break;
+        } */
+
+/ Ejercicio 11
