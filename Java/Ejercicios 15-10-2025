@@ -58,3 +58,24 @@
         } */
 
 / Ejercicio 11
+        int psw = 1234;
+        int claveIntroducida;
+        int intentosRestantes = 3;
+
+        Scanner sClave = new Scanner(System.in);
+        System.out.println("Introduce la contraseña para acceder a la caja fuerte: ");
+        claveIntroducida = sClave.nextInt();
+
+        System.out.println("Clave introducida " + claveIntroducida + ". Pensando...");
+
+        if (claveIntroducida != psw) {
+            while (claveIntroducida != psw && intentosRestantes > 0) {
+                Scanner sIntento = new Scanner(System.in);
+                System.out.println("La clave es incorrecta. Inténtalo de nuevo: ");
+                claveIntroducida = sIntento.nextInt();
+            }
+        } else if (claveIntroducida == psw){
+        System.out.println("La caja fuerte se ha abierto satisfactoriamente.");
+        }
+        
+        // Adaptar a bucle tipo do-while
