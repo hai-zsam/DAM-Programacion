@@ -106,6 +106,10 @@ public class main {
             }
         } */
 
+/* Ejercicio 5 Optimizado
+        for (int contador = 100; contador > 0; contador = contador - 5 ) {
+            System.out.println(contador)};
+
 /* Ejercicio 6
 
         int contador = -1;
