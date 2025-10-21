@@ -88,3 +88,9 @@
                     System.out.println("La clave es incorrecta. Inténtalo de nuevo: ");
             }
         } while (claveIntroducida != psw && intentosRestantes > 0);
+
+// Ejercicio 12
+        double num;
+        Scanner sNum = new Scanner(System.in);
+        System.out.println("Introduce un número para calcular de cuántos dígitos es.");
+        num = sNum.nextDouble();
