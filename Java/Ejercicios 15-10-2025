@@ -94,3 +94,15 @@
         Scanner sNum = new Scanner(System.in);
         System.out.println("Introduce un número para calcular de cuántos dígitos es.");
         num = sNum.nextDouble();
+
+// Ejercicio 13
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce un número: ");
+        int n = sc.nextInt();
+
+        int suma = 0;
+
+        for (int contador = n + 1; contador <= n + 100; contador++) {
+            suma += contador;
+
+            System.out.println(suma);
