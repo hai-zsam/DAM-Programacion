@@ -1,0 +1,75 @@
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        // Ejercicio 13
+
+        /*int n;
+        System.out.println("Introduce un dígito. ");
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+
+        for (int contador = n + 1; contador <= n + 100; contador ++) {
+            n += contador;
+            System.out.println(contador);
+        }*/
+
+        // Ejercicio 14
+
+        /* int num, cociente, cont;
+        Scanner sc = new Scanner (System.in);
+        Syste.out.println("Introduce un dígito.");
+        num = sc.nextInt();
+        cont = 0;
+        do{
+            num = num / 10;
+            cont = cont + 1;
+        } while (num > 0);
+        System.out.println("El número introducido tiene " + cont + " cifras."); */
+
+        // Ejercicio 15
+
+        /*int num, resto, contador, resultado;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce un número.");
+        num = sc.nextInt();
+        contador = 0;
+        resultado = 0;
+
+        do{
+            resto = num % 10;
+            num = num / 10;
+            resultado = resultado * 10 + resto;
+            contador = contador + 1;
+        } while (num != 0);
+
+        System.out.println("El número introducido tiene " + contador + " cifras.");
+        System.out.println("Y el número invertido es: " + resultado); */
+
+        /* int num;
+        int numRevertido = 0;
+        int digito;
+
+        Scanner sNumero = new Scanner(System.in);
+        System.out.println("Introduce un dígito para verificar si es capicúa (5 dígitos máx.): ");
+        num = sNumero.nextInt();
+
+        if (num >= 1 && num <= 99999) {
+            int numCopia = num;
+            while (numCopia > 0) {
+                digito = (numCopia % 10);
+                numRevertido = numRevertido * 10 + digito;
+                numCopia = numCopia / 10;
+            }
+
+            if (num == numRevertido) {
+                System.out.println(num + " es capicúa.");
+            } else {
+                System.out.println(num + " no es capicúa.");
+            }
+        } else {
+            System.out.println("Dígito demasiado grande."); */
+
+
+        }
+    }
+}
