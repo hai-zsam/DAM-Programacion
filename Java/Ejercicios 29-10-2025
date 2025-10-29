@@ -1,0 +1,95 @@
+import java.util.Scanner;
+public class main {
+    /* Ejercicio 1
+    public static double multiplicar(double numero1, double numero2){
+        double multiplicar = numero1 * numero2;
+        return multiplicar;
+    }
+    public static void main(String[] args) {
+        double numero1, numero2;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el primer número para multiplicar:");
+        numero1 = sc.nextDouble();
+        System.out.println("Introduce el segundo número para multiplicar:");
+        numero2 = sc.nextDouble();
+
+        System.out.println(multiplicar(numero1, numero2));
+        } */
+
+    /* Ejercicio 2
+    public static boolean esMayorEdad(int edadInt, boolean edad){
+        if (edadInt >=18){
+            edad = true;
+        } else {
+            edad = false;
+        } return edad;
+    }
+    public static void main(String[]args){
+        int edadInt;
+        boolean edad = false;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce la edad para verificar: ");
+        edadInt = sc.nextInt();
+
+        System.out.println(esMayorEdad(edadInt, edad));
+    } */
+
+    /* Ejercicio 3
+    public static doub le precioConIVA(double precioSinIVA){
+        double precioConIVA = precioSinIVA * 1.21;
+        return precioConIVA;
+    }
+    public static void main(String[] args) {
+        for (int contador = 5; contador > 0; contador --){
+            double precioSinIVA;
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Introduce el precio a calcular su IVA:");
+            precioSinIVA = sc.nextDouble();
+
+            System.out.println(precioConIVA(precioSinIVA));
+        }
+    } */
+
+    /* Ejercicio 4
+    public static int numeroMayor(int num1, int num2){
+        int numMayor;
+        if (num1 > num2){
+            numMayor = num1;
+        } else{
+            numMayor = num2;
+        } return numMayor;
+    }
+
+    public static void main(String[] args){
+        int num1, num2, num3;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce un número para comparar:");
+        num1 = sc.nextInt();
+        System.out.println("Introduce un segundo número para comparar:");
+        num2 = sc.nextInt();
+        System.out.println("Introduce un tercer número para comparar:");
+        num3 = sc.nextInt();
+
+        if (numeroMayor(num1, num2) > num3){
+            System.out.println("El número más grande es: " + numeroMayor(num1, num2));
+        } else{
+            System.out.println("El número más grande es: " + num3);
+        }
+    } */
+
+    /* Ejercicio 5
+    public static double descuento(double sinDescuento, double conDescuento){
+        double porcentajeDescuento = ((sinDescuento-conDescuento) / sinDescuento) * 100;
+        return porcentajeDescuento;
+    }
+    public static void main(String[] args){
+        double sinDescuento, conDescuento;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("¿Cuál es el precio sin descuento?");
+        sinDescuento = sc.nextDouble();
+        System.out.println("¿Cuál es el precio luego de aplicar el descuento?");
+        conDescuento = sc.nextDouble();
+
+        System.out.println("El descuento aplicado es " + descuento(sinDescuento, conDescuento));
+    } */
+}
