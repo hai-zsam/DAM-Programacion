@@ -1,0 +1,131 @@
+/* import java.util.Scanner;
+
+public class Main {
+    public static int maximo(){
+        int num1, num2;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce tres valores enteros para evaluar el más alto:");
+
+    }
+    public static void main(String[] args) {
+
+    }
+} */
+/* import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int nota;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Digite sua nota:");
+        nota = input.nextInt();
+
+        if (nota < 0 || nota > 10 ) {
+            System.out.println("Número no válido.");
+        } else if (nota < 5) {
+            System.out.println("Insuficiente.");
+        } else if (nota == 5 || nota == 6) {
+            System.out.println("Suficiente.");
+        } else if (nota == 7 || nota == 8) {
+            System.out.println("Notable.");
+        } else if (nota == 9 || nota == 10) {
+            System.out.println("Sobresaliente.");
+        }
+    }
+} */
+/* import java.util.InputMismatchException;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[]args){
+        try {
+            double euro, precioDolar, dolar, comision;
+
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Ingrese su cantidad de euro: ");
+            euro = sc.nextDouble();
+            System.out.println("Ingrese el precio del dolar actualmente: ");
+            precioDolar = sc.nextDouble();
+
+            dolar = precioDolar * euro;
+            if (dolar < 1000){
+                comision = dolar * 0.10;
+                System.out.println(euro + " son " + dolar + " dolares. Restando comisiones son: " + (dolar - comision));
+            } else if (dolar >= 1000 && dolar <= 1500){
+                comision = dolar * 0.07;
+                System.out.println(euro + " son " + dolar + " dolares. Restando comisiones son: " + (dolar - comision));
+            } else if (dolar > 1500){
+                comision = 150;
+                System.out.println(euro + " son " + dolar + " dolares. Restando comisiones son: " + (dolar - comision));
+            }
+        } catch (InputMismatchException e) {
+            System.out.println("Tipo de valor no válido.");
+        }
+    }
+} */
+/* import java.util.Scanner;
+
+public class Main {
+    public static int menu(){
+        int opcao;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escolha uma opção");
+        System.out.println("[1] Quadrado        [2] Triângulo       [3] Círculo      [4] Saída");
+        opcao = sc.nextInt();
+
+        return opcao;
+    }
+
+    public static double areaQuadrado(){
+        double lado, quadrado;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Insira o lado do quadrado:");
+        lado = sc.nextDouble();
+
+        quadrado = lado * lado * lado * lado;
+        return quadrado;
+    }
+
+    public static double areaTriangulo(){
+        double base, altura, triangulo;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Insira o altura do seu triângulo:");
+        altura = sc.nextDouble();
+        System.out.println("Insira o base do seu triângulo:");
+        base = sc.nextDouble();
+
+        triangulo = (base * altura) / 2;
+        return triangulo;
+    }
+
+    public static double areaCirculo(){
+        double radio, circulo;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("Insira o radio do seu circulo:");
+        radio = sc.nextDouble();
+
+        circulo = radio * radio * 3.14;
+        return circulo;
+    }
+
+    public static void main(String[] args) {
+        int opcao;
+        do {
+            opcao = menu();
+            switch (opcao){
+                case 1:
+                    System.out.println("O resultado do seu cálculo é: " + areaQuadrado());
+                    break;
+                case 2:
+                    System.out.println("O resultado do seu cálculo é: " + areaTriangulo());
+                    break;
+                case 3:
+                    System.out.println("O resultado do seu cálculo é: " +  areaCirculo());
+                    break;
+            }
+        } while (opcao != 4);
+        System.out.println("David Juan, eu não sou homeless. Me aprove.");
+    }
+} */
