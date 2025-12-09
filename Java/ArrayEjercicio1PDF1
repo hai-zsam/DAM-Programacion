@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        int[]numeros = new int [4];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el primer dígito:");
+        numeros[0] = sc.nextInt();
+        System.out.println("Introduce el segundo digito:");
+        numeros[1] = sc.nextInt();
+        System.out.println("Introduce el tercer digito:");
+        numeros[2] = sc.nextInt();
+        System.out.println("Introduce el cuarto digito:");
+        numeros[3] = sc.nextInt();
+
+        System.out.println(numeros[3]);
+        System.out.println(numeros[2]);
+        System.out.println(numeros[1]);
+        System.out.println(numeros[0]);
+    }
+}
