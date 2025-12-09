@@ -1,5 +1,5 @@
+// Ejercicio 1
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args){
 
@@ -18,5 +18,33 @@ public class Main {
         System.out.println(numeros[2]);
         System.out.println(numeros[1]);
         System.out.println(numeros[0]);
+    }
+}
+
+// Ejercicio 4
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        int mes;
+        int[]diasMes = new int [12];
+
+        diasMes [0] = 31;
+        diasMes [1] = 28;
+        diasMes [2] = 31;
+        diasMes [3] = 30;
+        diasMes [4] = 31;
+        diasMes [5] = 30;
+        diasMes [6] = 31;
+        diasMes [7] = 31;
+        diasMes [8] = 30;
+        diasMes [9] = 31;
+        diasMes [10] = 30;
+        diasMes [11] = 31;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el número del mes actual:");
+        mes = sc.nextInt();
+
+        System.out.println("La cantidad de días del mes son: " + diasMes[mes - 1]);
     }
 }
