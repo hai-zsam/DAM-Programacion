@@ -48,3 +48,20 @@ public class Main{
         System.out.println("La cantidad de días del mes son: " + diasMes[mes - 1]);
     }
 }
+
+// Ejercicio 5
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        int resto;
+        char[] letraDNI = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B',
+                'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca un DNI:");
+        resto = sc.nextInt();
+        resto = resto % 23;
+
+        System.out.println("La letra del DNI es: " + letraDNI[resto]);
+    }
+}
