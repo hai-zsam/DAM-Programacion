@@ -1,0 +1,199 @@
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+public class Main {
+    /* public static int menu(){
+        int num;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Añadir contacto");
+        System.out.println("2. Modificar contacto");
+        System.out.println("3. Eliminar contacto");
+        System.out.println("4. Consultar contactos");
+        System.out.println("5. Listar contacto");
+        System.out.println("6. Ordenar contactos");
+        System.out.println("7. Salir");
+        num = sc.nextInt();
+        return num;
+    }
+
+    public static void añadirContactos(ArrayList<Contacto> contactos){
+        String nombre;
+        String apellido;
+        String telefono;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ingrese el nombre del contacto");
+        nombre = sc.nextLine();
+        System.out.println("Ingrese el apellido del contacto");
+        apellido = sc.nextLine();
+        System.out.println("Ingrese el telefono del contacto");
+        telefono = sc.nextLine();
+
+        Contacto nuevoContacto = new Contacto(nombre, apellido, telefono);
+        contactos.add(nuevoContacto);
+    }
+
+    public static void modificarContactos(ArrayList<Contacto> contactos) {
+        String nombre;
+        String apellido;
+        boolean encontrado = false;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el nombre del contacto a modificar");
+        nombre = sc.nextLine();
+        System.out.println("Ingrese el apellido del contacto a modificar");
+        apellido = sc.nextLine();
+
+        for (int i = 0; i < contactos.size(); i++) {
+            if (contactos.get(i).getNombre().equals(nombre) && contactos.get(i).getApellido().equals(apellido)) {
+                String telefono;
+                System.out.println("Ingrese el telefono del contacto a modificar");
+                telefono = sc.nextLine();
+                contactos.get(i).setTelefono(telefono);
+                encontrado = true;
+            }
+            System.out.println("Contacto no encontrado");
+        }
+    }
+
+    public static void eliminarContactos(ArrayList<Contacto> contactos) {
+        String nombre;
+        String apellido;
+        boolean encontrado = false;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el nombre del contacto a eliminar");
+        nombre = sc.nextLine();
+        System.out.println("Ingrese el apellido del contacto a eliminar");
+        apellido = sc.nextLine();
+
+        for (int i = 0; i < contactos.size(); i++) {
+            if (contactos.get(i).getNombre().equals(nombre) && contactos.get(i).getApellido().equals(apellido)) {
+                contactos.remove(i);
+                encontrado = true;
+            }
+        }
+        System.out.println("Contacto no encontrado");
+    }
+
+    public static void consultarContactos(ArrayList<Contacto> contactos){
+        String nombre;
+        String apellido;
+        boolean encontrado = false;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el nombre del contacto a consultar");
+        nombre = sc.nextLine();
+        System.out.println("Ingrese el apellido del contacto a consultar");
+        apellido = sc.nextLine();
+        for (int i = 0; i < contactos.size(); i++){
+            if (contactos.get(i).getNombre().equals(nombre) && contactos.get(i).getApellido().equals(apellido)){
+                System.out.println(contactos.get(i).getNombre() + " " + contactos.get(i).getApellido() + " " + contactos.get(i).getTelefono());
+                encontrado = true;
+            }
+        } System.out.println("Contacto no encontrado");
+    }
+
+    public static void ordenarContactos(ArrayList<Contacto> contactos){
+
+    }
+
+    public static void listarContactos(ArrayList<Contacto> contactos){
+        System.out.println("Contactos encontrados:");
+        for (int i = 0; i < contactos.size(); i++){
+            System.out.println(contactos.get(i).getNombre() + " " + contactos.get(i).getApellido() + " Teléfono: " + contactos.get(i).getTelefono());
+        }
+    } */
+    public static void main(String[] args) {
+        /* ArrayList <Contacto> contactos = new ArrayList<>();
+        int opcion;
+        do {
+            opcion = menu();
+            switch (opcion) {
+                case 1: añadirContactos(contactos);
+                break;
+                case 2: modificarContactos(contactos);
+                break;
+                case 3: eliminarContactos(contactos);
+                break;
+                case 4: consultarContactos(contactos);
+                break;
+                case 5: listarContactos(contactos);
+                break;
+                case 6: System.exit(0);
+                break;
+            }
+        } while (opcion != 7);
+    } */
+        // Ejercicio 1 - Tema 6 ArrayList.pdf
+        /*int num;
+        Random aleatorio = new Random();
+        ArrayList<String> par = new ArrayList<>();
+        ArrayList<String> impar = new ArrayList<>();
+        do {
+            num = aleatorio.nextInt(99);
+            if (num %  2 == 0) {
+                par.add(String.valueOf(num));
+            }  else {
+                impar.add(String.valueOf(num));
+            }
+        } while (num != 50);
+        System.out.println("Número 50 encontrado");
+        /*System.out.println("Números pares encontrados:");
+        for (int i = 0; i < par.size(); i++) {
+            System.out.println(par.get(i));
+        }
+        System.out.println("Números impares encontrados: ");
+        for (int i = 0; i < impar.size(); i++) {
+            System.out.println(impar.get(i));
+        }
+        System.out.println("Pares: " + par + " Impares: " + impar);*/
+        // Ejercicio 2 - Tema 6 ArrayList.pdf
+        /* ArrayList<String> listaOrden = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        String aux;
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Introduce una palabra a la lista para ordenar:");
+            listaOrden.add(sc.nextLine());
+        }
+        for (int i = 0; i < listaOrden.size(); i++) {
+            for (int j = i + 1; j < listaOrden.size(); j++) {
+                if (listaOrden.get(i).compareTo(listaOrden.get(j)) > 0) {
+                    aux = listaOrden.get(i);
+                    listaOrden.set((i), listaOrden.get(j));
+                    listaOrden.set((j), aux);
+                }
+            }
+        }
+        System.out.println("Lista ordenada: " + listaOrden);
+    } */
+        // Ejercicio 3- Tema 6 ArrayList.pdf
+        Random aleatorio = new Random();
+        ArrayList<Carta> baraja = new ArrayList<>();
+        ArrayList<Carta> mano = new ArrayList<>();
+        int carta;
+        // Bucle para crear las cartas de la Baraja
+        for (int i = 1; i < 12; i++) {
+            baraja.add(new Carta(i, "Bastos"));         // Añadir clase(s) a la lista "Baraja"
+            baraja.add(new Carta(i, "Copas"));
+            baraja.add(new Carta(i, "Espadas"));
+            baraja.add(new Carta(i, "Oros"));
+        }
+
+        for (int i = 0; i < 10; i++) {
+            carta = aleatorio.nextInt(baraja.size());
+            mano.add(baraja.get(carta));
+            baraja.remove(carta);
+        }
+
+        for (int i = 0; i < mano.size(); i++) {
+            for (int j = i + 1; j < mano.size(); j++) {
+                int temp = mano.get(i).getPalo().compareTo(mano.get(j).getPalo());
+                if (temp > 0 || (temp == 0 && mano.get(i).getNum() > (mano.get(j).getNum()))) {
+                 Carta aux = mano.get(i);
+                 mano.set(i, mano.get(j));
+                 mano.set(j, aux);
+                }
+            }
+        }
+        System.out.println("Mondonguito");
+        System.out.println(mano);
+    }
+}
