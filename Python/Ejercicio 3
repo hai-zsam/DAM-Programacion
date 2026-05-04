@@ -1,0 +1,24 @@
+# Ejercicio 3
+# Pedir una frase
+frase = input("Introduce una frase: ")
+
+# Contar vocales
+vocales = "aeiouáéíóúàèìòùAEIOUÁÉÍÓÚÀÈÌÒÙ"
+contador_vocales = 0
+
+for letra in frase:
+    # Si la letra está en el String de vocales, se suma 1 al contador
+    if letra in vocales:
+        contador_vocales += 1
+
+# Contar palabras
+palabras = frase.split() # Si el parámetro de split() es vacío, se divide por espacios
+contador_palabras = len(palabras)
+
+# Invertir frase
+frase_invertida = frase[::-1]
+
+# Mostrar resultados
+print(f"Número de vocales: {contador_vocales}")
+print(f"Número de palabras: {contador_palabras}")
+print(f"Frase invertida: {frase_invertida}")
