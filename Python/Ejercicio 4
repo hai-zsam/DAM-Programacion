@@ -1,0 +1,55 @@
+# Ejercicio 4
+# Crear una lista vacía llamada tareas.
+tareas = []
+
+# Funciones
+# Funcion mostrar tareas
+def mostrar_tareas():
+    # Muestra todas las tareas numeradas
+    if not tareas:
+        print("No hay tareas en la lista.")
+    else:
+        print("Tareas:")
+        for i, tarea in enumerate(tareas, start = 1):
+            print(f"{i}. {tarea}")
+
+# Funcion agregar tarea
+def agregar_tarea():
+    # Añade una tarea nueva
+    tarea = input("Nueva tarea: ")
+    tareas.append(tarea)
+    print("Tarea agregada.")
+
+# Funcion eliminar tarea
+def eliminar_tarea():
+    # Elimina una tarea existente por número
+    mostrar_tareas()
+    if len(tareas) > 0:
+        indice = int(input("Número de tarea a eliminar: ")) - 1
+
+        # Comprobar si el índice es válido
+        if 0 <= indice <= len(tareas):
+            tareas.pop(indice)
+        else:
+            print("Número de tarea no válido.")
+
+# Menu principal
+while True:
+    print("\n1. Añadir tarea")
+    print("2. Mostrar tareas")
+    print("3. Eliminar tarea")
+    print("4. Salir")
+    
+    opcion = input("Selecciona una opción: ")
+
+    if opcion == "1":
+        agregar_tarea()
+    elif opcion == "2":
+        mostrar_tareas()
+    elif opcion == "3":
+        eliminar_tarea()
+    elif opcion == "4":
+        print("Saliendo...")
+        break
+    else:
+        print("Opción no válida.")
