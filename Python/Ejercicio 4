@@ -36,10 +36,10 @@ def eliminar_tarea():
 # Menu principal
 while True:
     print("\n1. Añadir tarea")
-    print("2. Mostrar tareas")
-    print("3. Eliminar tarea")
-    print("4. Salir")
-    
+    print("\n2. Mostrar tareas")
+    print("\n3. Eliminar tarea")
+    print("\n4. Salir")
+
     opcion = input("Selecciona una opción: ")
 
     if opcion == "1":
