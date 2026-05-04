@@ -3,6 +3,9 @@
 num = int(input("Ingrese un numero: "))
 longitud = len(str(num))
 
+# Imprimir título
+print(f"Tabla de multiplicar del {num}:")
+
 # Función para la cabecera / pie
 def imprimir_rayas():
     print("=" * (longitud + 4))
